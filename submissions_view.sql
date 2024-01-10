@@ -38,4 +38,4 @@ VIEW `submissions_monitoring_view` AS
         `ps`.`duplicate` = 0
             AND `d`.`device_status_id` = 3
             AND CAST(`ps`.`created_at` AS DATE) >= '2023-10-01'
-    ORDER BY `ps`.`id` DESC
+    ORDER BY `ps`.`id` DESC;
