@@ -1,6 +1,7 @@
 -- stored procedure for auditing changes on forms
 
 DELIMITER $$
+	
 CREATE DEFINER=`user`@`%` PROCEDURE `form_edit_audit`(in dm_form_id int)
 begin
 	select  u.email user_email,
@@ -13,4 +14,5 @@ begin
 	where el.target_type = 'Form' and el.target_id = dm_form_id
     order by edit_created_on desc;
 end$$
-DELIMITER ;
+	
+DELIMITER;
