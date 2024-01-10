@@ -34,4 +34,4 @@ VIEW `forms_monitoring_view` AS
     FROM
         (`forms` `f`
         LEFT JOIN `organizations` `org` ON (`f`.`organization_id` = `org`.`id`))
-    ORDER BY `f`.`created_at` DESC
+    ORDER BY `f`.`created_at` DESC;
