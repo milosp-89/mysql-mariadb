@@ -33,4 +33,4 @@ VIEW `devices_monitoring_view` AS
         ((`devices` `d`
         LEFT JOIN `organizations` `o` ON (`d`.`organization_id` = `o`.`id`))
         LEFT JOIN `device_statuses` `ds` ON (`d`.`device_status_id` = `ds`.`id`))
-    ORDER BY `d`.`created_at` DESC
+    ORDER BY `d`.`created_at` DESC;
